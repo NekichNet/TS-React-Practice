@@ -1,0 +1,20 @@
+.resize-handler {
+  &:global(.react-resizable-handle) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    cursor: ew-resize;
+    background-color: lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: none;
+
+    &:hover {
+      // background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
