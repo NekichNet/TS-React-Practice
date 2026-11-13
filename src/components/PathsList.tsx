@@ -112,6 +112,18 @@ import StylingCssModulesComposesStyles from './exercises/109-StylingCssModulesCo
 import StylingCssModulesComposesFiles from './exercises/110-StylingCssModulesComposesFiles/110-StylingCssModulesComposesFiles';
 import ProjectChecklist from './exercises/111-ProjectChecklist/111-ProjectChecklist';
 import ProjectNotepad from './exercises/112-ProjectNotepad/112-ProjectNotepad';
+import SupremeHooksUseEffectIntro from './exercises/204-SupremeHooksUseEffectIntro/204-SupremeHooksUseEffectIntro';
+import SupremeHooksUseEffectDependencies from './exercises/205-SupremeHooksUseEffectDependencies/205-SupremeHooksUseEffectDependencies';
+import SupremeHooksUseEffectGlobalHandlers from './exercises/206-SupremeHooksUseEffectGlobalHandlers/206-SupremeHooksUseEffectGlobalHandlers';
+import SupremeHooksContext from './exercises/208-SupremeHooksContext/208-SupremeHooksContext';
+import SupremeHooksUseContext from './exercises/209-SupremeHooksUseContext/209-SupremeHooksUseContext';
+import SupremeHooksContextUpdate from './exercises/210-SupremeHooksContextUpdate/210-SupremeHooksContextUpdate';
+import SupremeHooksUseRef from './exercises/212-SupremeHooksUseRef/212-SupremeHooksUseRef';
+import SupremeHooksUseRefDom from './exercises/213-SupremeHooksUseRefDom/213-SupremeHooksUseRefDom';
+import SupremeHooksUseMemo from './exercises/214-SupremeHooksUseMemo/214-SupremeHooksUseMemo';
+import SupremeHooksApiMemo from './exercises/215-SupremeHooksApiMemo/215-SupremeHooksApiMemo';
+import SupremeHooksUseCallback from './exercises/216-SupremeHooksUseCallback/216-SupremeHooksUseCallback';
+import SupremeHooksUseTransition from './exercises/217-SupremeHooksUseTransition/217-SupremeHooksUseTransition';
 
 function PathsList() {
   return (
@@ -121,18 +133,39 @@ function PathsList() {
       <Route path={'/basis/devtools'} element={<BasisDevtools />} />
       <Route path={'/basis/component-way'} element={<BasisComponentWay />} />
       <Route path={'/basis/site-layout'} element={<BasisSiteLayout />} />
-      <Route path={'/basis/component-result'} element={<BasisComponentResult />} />
+      <Route
+        path={'/basis/component-result'}
+        element={<BasisComponentResult />}
+      />
       <Route path={'/jsx/intro'} element={<JsxIntro />} />
       <Route path={'/jsx/returning/nested'} element={<JsxReturningNested />} />
       <Route path={'/jsx/returning/down'} element={<JsxReturningDown />} />
-      <Route path={'/jsx/returning/several'} element={<JsxReturningSeveral />} />
-      <Route path={'/jsx/returning/unclosed'} element={<JsxReturningUnclosed />} />
+      <Route
+        path={'/jsx/returning/several'}
+        element={<JsxReturningSeveral />}
+      />
+      <Route
+        path={'/jsx/returning/unclosed'}
+        element={<JsxReturningUnclosed />}
+      />
       <Route path={'/jsx/returning/empty'} element={<JsxReturningEmpty />} />
-      <Route path={'/jsx/variables/inserting'} element={<JsxVariablesInserting />} />
-      <Route path={'/jsx/variables/nuances'} element={<JsxVariablesNuances />} />
+      <Route
+        path={'/jsx/variables/inserting'}
+        element={<JsxVariablesInserting />}
+      />
+      <Route
+        path={'/jsx/variables/nuances'}
+        element={<JsxVariablesNuances />}
+      />
       <Route path={'/jsx/variables/arrays'} element={<JsxVariablesArrays />} />
-      <Route path={'/jsx/variables/objects'} element={<JsxVariablesObjects />} />
-      <Route path={'/jsx/variables/attributes'} element={<JsxVariablesAttributes />} />
+      <Route
+        path={'/jsx/variables/objects'}
+        element={<JsxVariablesObjects />}
+      />
+      <Route
+        path={'/jsx/variables/attributes'}
+        element={<JsxVariablesAttributes />}
+      />
       <Route path={'/jsx/tags/intro'} element={<JsxTagsIntro />} />
       <Route path={'/jsx/tags/several'} element={<JsxTagsSeveral />} />
       <Route path={'/jsx/tags/multi-line'} element={<JsxTagsMultiLine />} />
@@ -144,20 +177,47 @@ function PathsList() {
       <Route path={'/conditions/show'} element={<ConditionsShow />} />
       <Route path={'/conditions/return'} element={<ConditionsReturn />} />
       <Route path={'/conditions/ternary'} element={<ConditionsTernary />} />
-      <Route path={'/conditions/logical-and'} element={<ConditionsLogicalAnd />} />
+      <Route
+        path={'/conditions/logical-and'}
+        element={<ConditionsLogicalAnd />}
+      />
       <Route path={'/conditions/inverting'} element={<ConditionsInverting />} />
       <Route path={'/functions/intro'} element={<FunctionsIntro />} />
-      <Route path={'/functions/tags-calling'} element={<FunctionsTagsCalling />} />
+      <Route
+        path={'/functions/tags-calling'}
+        element={<FunctionsTagsCalling />}
+      />
       <Route path={'/functions/handlers'} element={<FunctionsHandlers />} />
-      <Route path={'/functions/handlers-params'} element={<FunctionsHandlersParams />} />
-      <Route path={'/functions/event-object'} element={<FunctionsEventObject />} />
-      <Route path={'/functions/event-object-params'} element={<FunctionsEventObjectParams />} />
+      <Route
+        path={'/functions/handlers-params'}
+        element={<FunctionsHandlersParams />}
+      />
+      <Route
+        path={'/functions/event-object'}
+        element={<FunctionsEventObject />}
+      />
+      <Route
+        path={'/functions/event-object-params'}
+        element={<FunctionsEventObjectParams />}
+      />
       <Route path={'/forming/tags-array'} element={<FormingTagsArray />} />
-      <Route path={'/forming/loop-tags-array'} element={<FormingLoopTagsArray />} />
-      <Route path={'/forming/tags-array-data'} element={<FormingTagsArrayData />} />
+      <Route
+        path={'/forming/loop-tags-array'}
+        element={<FormingLoopTagsArray />}
+      />
+      <Route
+        path={'/forming/tags-array-data'}
+        element={<FormingTagsArrayData />}
+      />
       <Route path={'/forming/array-keys'} element={<FormingArrayKeys />} />
-      <Route path={'/forming/array-of-objects'} element={<FormingArrayOfObjects />} />
-      <Route path={'/forming/unique-keys-id'} element={<FormingUniqueKeysId />} />
+      <Route
+        path={'/forming/array-of-objects'}
+        element={<FormingArrayOfObjects />}
+      />
+      <Route
+        path={'/forming/unique-keys-id'}
+        element={<FormingUniqueKeysId />}
+      />
       <Route path={'/forming/table'} element={<FormingTable />} />
       <Route path={'/id/intro'} element={<IdIntro />} />
       <Route path={'/id/problem'} element={<IdProblem />} />
@@ -165,7 +225,10 @@ function PathsList() {
       <Route path={'/id/generation'} element={<IdGeneration />} />
       <Route path={'/id/function'} element={<IdFunction />} />
       <Route path={'/id/function-using'} element={<IdFunctionUsing />} />
-      <Route path={'/id/function-wrong-using'} element={<IdFunctionWrongUsing />} />
+      <Route
+        path={'/id/function-wrong-using'}
+        element={<IdFunctionWrongUsing />}
+      />
       <Route path={'/states/intro'} element={<StatesIntro />} />
       <Route path={'/states/using'} element={<StatesUsing />} />
       <Route path={'/states/reactivity'} element={<StatesReactivity />} />
@@ -178,56 +241,197 @@ function PathsList() {
       <Route path={'/forms/data'} element={<FormsData />} />
       <Route path={'/forms/textarea'} element={<FormsTextarea />} />
       <Route path={'/forms/checkbox/intro'} element={<FormsCheckboxIntro />} />
-      <Route path={'/forms/checkbox/conditional-rendering'} element={<FormsCheckboxConditionalRendering />} />
+      <Route
+        path={'/forms/checkbox/conditional-rendering'}
+        element={<FormsCheckboxConditionalRendering />}
+      />
       <Route path={'/forms/select/intro'} element={<FormsSelectIntro />} />
       <Route path={'/forms/select/array'} element={<FormsSelectArray />} />
       <Route path={'/forms/select/value'} element={<FormsSelectValue />} />
-      <Route path={'/forms/select/array-value'} element={<FormsSelectArrayValue />} />
+      <Route
+        path={'/forms/select/array-value'}
+        element={<FormsSelectArrayValue />}
+      />
       <Route path={'/forms/radio'} element={<FormsRadio />} />
       <Route path={'/forms/default-values'} element={<FormsDefaultValues />} />
-      <Route path={'/forms/array-inputs-binding'} element={<FormsArrayInputsBinding />} />
-      <Route path={'/forms/object-inputs-binding'} element={<FormsObjectInputsBinding />} />
+      <Route
+        path={'/forms/array-inputs-binding'}
+        element={<FormsArrayInputsBinding />}
+      />
+      <Route
+        path={'/forms/object-inputs-binding'}
+        element={<FormsObjectInputsBinding />}
+      />
       <Route path={'/data/intro'} element={<DataIntro />} />
       <Route path={'/data/array-adding'} element={<DataArrayAdding />} />
-      <Route path={'/data/array-operations'} element={<DataArrayOperations />} />
-      <Route path={'/data/objects-array-adding'} element={<DataObjectsArrayAdding />} />
-      <Route path={'/data/objects-array-operations'} element={<DataObjectsArrayOperations />} />
+      <Route
+        path={'/data/array-operations'}
+        element={<DataArrayOperations />}
+      />
+      <Route
+        path={'/data/objects-array-adding'}
+        element={<DataObjectsArrayAdding />}
+      />
+      <Route
+        path={'/data/objects-array-operations'}
+        element={<DataObjectsArrayOperations />}
+      />
       <Route path={'/data/showing'} element={<DataShowing />} />
       <Route path={'/components/intro'} element={<ComponentsIntro />} />
       <Route path={'/components/using'} element={<ComponentsUsing />} />
-      <Route path={'/components/multiple-instances'} element={<ComponentsMultipleInstances />} />
+      <Route
+        path={'/components/multiple-instances'}
+        element={<ComponentsMultipleInstances />}
+      />
       <Route path={'/components/props'} element={<ComponentsProps />} />
       <Route path={'/components/child'} element={<ComponentsChild />} />
-      <Route path={'/components/child-array'} element={<ComponentsChildArray />} />
-      <Route path={'/components/child-loop'} element={<ComponentsChildLoop />} />
-      <Route path={'/components/passing-states'} element={<ComponentsPassingStates />} />
-      <Route path={'/components/passing-id'} element={<ComponentsPassingId />} />
-      <Route path={'/components/changing-parent-state'} element={<ComponentsChangingParentState />} />
-      <Route path={'/components/editing-parent-state'} element={<ComponentsEditingParentState />} />
-      <Route path={'/components/editing-grandparent-state'} element={<ComponentsEditingGrandparentState />} />
-      <Route path={'/components/modes-via-states'} element={<ComponentsModesViaStates />} />
+      <Route
+        path={'/components/child-array'}
+        element={<ComponentsChildArray />}
+      />
+      <Route
+        path={'/components/child-loop'}
+        element={<ComponentsChildLoop />}
+      />
+      <Route
+        path={'/components/passing-states'}
+        element={<ComponentsPassingStates />}
+      />
+      <Route
+        path={'/components/passing-id'}
+        element={<ComponentsPassingId />}
+      />
+      <Route
+        path={'/components/changing-parent-state'}
+        element={<ComponentsChangingParentState />}
+      />
+      <Route
+        path={'/components/editing-parent-state'}
+        element={<ComponentsEditingParentState />}
+      />
+      <Route
+        path={'/components/editing-grandparent-state'}
+        element={<ComponentsEditingGrandparentState />}
+      />
+      <Route
+        path={'/components/modes-via-states'}
+        element={<ComponentsModesViaStates />}
+      />
       <Route path={'/concepts/intro'} element={<ConceptsIntro />} />
       <Route path={'/concepts/data'} element={<ConceptsData />} />
-      <Route path={'/concepts/components-types'} element={<ConceptsComponentsTypes />} />
+      <Route
+        path={'/concepts/components-types'}
+        element={<ConceptsComponentsTypes />}
+      />
       <Route path={'/concepts/data-flow'} element={<ConceptsDataFlow />} />
-      <Route path={'/concepts/lifting-state-up'} element={<ConceptsLiftingStateUp />} />
-      <Route path={'/concepts/truth-one-source'} element={<ConceptsTruthOneSource />} />
+      <Route
+        path={'/concepts/lifting-state-up'}
+        element={<ConceptsLiftingStateUp />}
+      />
+      <Route
+        path={'/concepts/truth-one-source'}
+        element={<ConceptsTruthOneSource />}
+      />
       <Route path={'/styling/intro'} element={<StylingIntro />} />
       <Route path={'/styling/global-css'} element={<StylingGlobalCss />} />
-      <Route path={'/styling/object-to-style'} element={<StylingObjectToStyle />} />
-      <Route path={'/styling/common-file-to-style'} element={<StylingCommonFileToStyle />} />
-      <Route path={'/styling/styles-in-style'} element={<StylingStylesInStyle />} />
-      <Route path={'/styling/variables-to-style'} element={<StylingVariablesToStyle />} />
-      <Route path={'/styling/styled-components'} element={<StylingStyledComponents />} />
-      <Route path={'/styling/styled-components-props'} element={<StylingStyledComponentsProps />} />
-      <Route path={'/styling/styled-components-conditional'} element={<StylingStyledComponentsConditional />} />
-      <Route path={'/styling/styled-components-extending'} element={<StylingStyledComponentsExtending />} />
-      <Route path={'/styling/css-modules-start'} element={<StylingCssModulesStart />} />
-      <Route path={'/styling/css-modules-finish'} element={<StylingCssModulesFinish />} />
-      <Route path={'/styling/css-modules-composes-styles'} element={<StylingCssModulesComposesStyles />} />
-      <Route path={'/styling/css-modules-composes-files'} element={<StylingCssModulesComposesFiles />} />
+      <Route
+        path={'/styling/object-to-style'}
+        element={<StylingObjectToStyle />}
+      />
+      <Route
+        path={'/styling/common-file-to-style'}
+        element={<StylingCommonFileToStyle />}
+      />
+      <Route
+        path={'/styling/styles-in-style'}
+        element={<StylingStylesInStyle />}
+      />
+      <Route
+        path={'/styling/variables-to-style'}
+        element={<StylingVariablesToStyle />}
+      />
+      <Route
+        path={'/styling/styled-components'}
+        element={<StylingStyledComponents />}
+      />
+      <Route
+        path={'/styling/styled-components-props'}
+        element={<StylingStyledComponentsProps />}
+      />
+      <Route
+        path={'/styling/styled-components-conditional'}
+        element={<StylingStyledComponentsConditional />}
+      />
+      <Route
+        path={'/styling/styled-components-extending'}
+        element={<StylingStyledComponentsExtending />}
+      />
+      <Route
+        path={'/styling/css-modules-start'}
+        element={<StylingCssModulesStart />}
+      />
+      <Route
+        path={'/styling/css-modules-finish'}
+        element={<StylingCssModulesFinish />}
+      />
+      <Route
+        path={'/styling/css-modules-composes-styles'}
+        element={<StylingCssModulesComposesStyles />}
+      />
+      <Route
+        path={'/styling/css-modules-composes-files'}
+        element={<StylingCssModulesComposesFiles />}
+      />
       <Route path={'/project/checklist'} element={<ProjectChecklist />} />
       <Route path={'/project/notepad'} element={<ProjectNotepad />} />
+      <Route
+        path={'/supreme/hooks/use-effect/intro/'}
+        element={<SupremeHooksUseEffectIntro />}
+      />
+      <Route
+        path={'/supreme/hooks/use-effect/dependencies/'}
+        element={<SupremeHooksUseEffectDependencies />}
+      />
+      <Route
+        path={'/supreme/hooks/use-effect/global-handlers/'}
+        element={<SupremeHooksUseEffectGlobalHandlers />}
+      />
+      <Route
+        path={'/supreme/hooks/context/'}
+        element={<SupremeHooksContext />}
+      />
+      <Route
+        path={'/supreme/hooks/use-context/'}
+        element={<SupremeHooksUseContext />}
+      />
+      <Route
+        path={'/supreme/hooks/context-update/'}
+        element={<SupremeHooksContextUpdate />}
+      />
+      <Route
+        path={'/supreme/hooks/use-ref/'}
+        element={<SupremeHooksUseRef />}
+      />
+      <Route
+        path={'/supreme/hooks/use-ref-dom/'}
+        element={<SupremeHooksUseRefDom />}
+      />
+      <Route
+        path={'/supreme/hooks/use-memo/'}
+        element={<SupremeHooksUseMemo />}
+      />
+      <Route
+        path={'/supreme/hooks/api-memo/'}
+        element={<SupremeHooksApiMemo />}
+      />
+      <Route
+        path={'/supreme/hooks/use-callback/'}
+        element={<SupremeHooksUseCallback />}
+      />
+      <Route
+        path={'/supreme/hooks/use-transition/'}
+        element={<SupremeHooksUseTransition />}
+      />
     </Routes>
   );
 }

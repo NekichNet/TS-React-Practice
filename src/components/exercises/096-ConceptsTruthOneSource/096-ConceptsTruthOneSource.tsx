@@ -2,12 +2,20 @@ import { useState } from 'react';
 import TemperatureField from './TemperatureField';
 
 function ConceptsTruthOneSource() {
+  /**
+   * Упражнение недоделано
+   */
+
   const [temp, setTemp] = useState(0);
-  // const handleCel = (value: string) => {
-  //   setTemp();
-  // };
-  // const handleFar = (value: string) => {};
-  // const handleKel = (value: string) => {};
+  const handleCel = (value: number) => {
+    setTemp(value);
+  };
+  const handleFar = (value: number) => {
+    setTemp(value);
+  };
+  const handleKel = (value: number) => {
+    setTemp(value);
+  };
 
   return (
     <div>
